@@ -1,0 +1,151 @@
+*{
+    margin: auto;
+    padding-top: 5px;
+    font-family: 'Shadows Into Light', cursive;
+    
+}
+body{
+    background-image: url(https://img3.goodfon.com/original/1920x1080/7/2b/priroda-risovannye-oblaka.jpg);
+    background-size: 100%;
+}
+
+.title{
+    display: flex;
+    font-size: 50px;
+}
+.round{
+    display: flex;
+    font-size: 40px;
+}
+.score{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    font-size: 70px;
+}
+.heart{
+    display: flex;
+}
+.you{
+    display: grid;
+    grid-template-columns: 2.3fr 2.3fr 2.3fr;
+    grid-gap: 60px;
+
+}
+.comp{
+    display: grid;
+    grid-template-columns: 2.3fr 2.3fr 2.3fr;
+    grid-gap: 60px;
+}
+.choice{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 5px;
+
+}
+
+.starsYou {
+    padding-top: 0px;
+  position: relative;
+  width: 30px;
+  height: 50px;
+  background-color: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(315deg);
+}
+
+.starsYou:before {
+    padding-top: 0px;
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background-color: red;
+  border-radius: 0 50px 50px 0;
+}
+.paper{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(paper.png);
+   background-position: 50% 50%;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   border:1px solid black;
+   background-color: rgb(229, 193, 221);
+}
+
+.rock{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(rock.png);
+   background-position: 50% 50%;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   border:1px solid black;
+   background-color: rgb(229, 193, 221);
+
+}
+
+.scissors{
+    
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(scissors.png);
+   background-position: 50% 50%;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   border:1px solid black;
+   background-color:  rgb(229, 193, 221);
+}
+.selected{
+    background-color:#CC99FE;
+}
+
+.heartout{
+    background-color: black;
+}
+.heartout:before{
+    background-color: black;
+}
+.winner{
+    font-size: 70px;
+    text-align: center;
+}
+.roundNum{
+    text-align: center;
+    font-size: 65px;
+}
+.show{
+    display: flex;
+    width: 200px;
+    height: 70px;
+    background: linear-gradient(to top, #83269b, #e976da);
+    font-size: 42px;
+    text-align: center;
+    border: 1px solid black;
+    padding-bottom: 35px;
+    padding-left: 12px;
+}
+.showNew{
+    display: flex;
+    width: 200px;
+    height: 70px;
+    background: linear-gradient(to top,  #83269b, #e976da);
+    font-size: 38px;
+    text-align: center;
+    border: 1px solid black;
+    padding-bottom: 35px;
+    padding-left: 25px;
+}
+.inv{
+    display: none;
+}
+button:focus {
+    outline: none !important
+    }
